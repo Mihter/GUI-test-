@@ -16,27 +16,13 @@ using System.Windows.Shapes;
 namespace GUI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для PageMainPacMan.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageMainPacMan : Page
     {
-        public MainWindow()
+        public PageMainPacMan()
         {
             InitializeComponent();
-            
         }
-
-        /*private void ButtonMainChess(object sender, RoutedEventArgs e)
-        {
-            MainChess taskWindow = new MainChess();
-            taskWindow.Show();
-        }*/
-        private void ButtonMainChess(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Content= new PageMainChess();
-            
-        }
-        
-
     }
 }
