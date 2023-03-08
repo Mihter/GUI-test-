@@ -10,19 +10,28 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace GUI
 {
     /// <summary>
-    /// Логика взаимодействия для MainChess.xaml
+    /// Логика взаимодействия для PageMain.xaml
+    /// Это самая первая страница с которой и будет начинатся игра.
     /// </summary>
-    public partial class MainChess : Window
+    public partial class PageMain : Page
     {
-        public MainChess()
+        public PageMain()
         {
             InitializeComponent();
         }
+
+        
+        private void ButtonMainChess(object sender, RoutedEventArgs e)
+        {            
+                NavigationService.Navigate(new PageMainChess());   
+        }  
+
         
     }
 }

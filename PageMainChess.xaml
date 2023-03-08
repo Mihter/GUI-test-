@@ -12,7 +12,7 @@
     
     
     <Grid Background="DeepSkyBlue" >
-        <Button Name="Exit" Width="80" Height="85" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" >
+        <Button Name="Exit" Click="ButtonExitMainFrame" Width="80" Height="85" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" >
             <Image Source="/exitfrompage.png"></Image>
         </Button>
         <StackPanel Orientation="Vertical" >

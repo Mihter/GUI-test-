@@ -5,10 +5,27 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:GUI"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="1000"
       Title="PageMainPacMan">
 
-    <Grid Background="DeepSkyBlue">
-        
+    <Grid Background="DeepSkyBlue" >
+        <Button Name="Exit" Click="ButtonExitMainFrame" Width="80" Height="85" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" >
+            <Image Source="/exitfrompage.png"></Image>
+        </Button>
+        <StackPanel Orientation="Vertical" >
+
+            <TextBlock Text="NickName" FontSize="25" FontWeight="Bold" TextAlignment="Center" Margin="0,8,0,0"/>
+            <TextBox Name="NickName" Width="450" Height="48"  FontSize="32"/>
+            <StackPanel Orientation="Horizontal" Margin="0,40,0,0">
+                <Button Name="StartButton" Content="New Game" Background="White" Width="350" Height="80" Margin="100,0,0,0"></Button>
+                <Button Name="ConnectButton" Content="Connection" Background="White" Width="350" Height="80" Margin="100,0,0,0"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Name="RuleButton" Content="Rule34" Background="White" Width="250" Height="80" Margin="100,40,0,0" Click="RuleButton_Click"></Button>
+                <Button Name="WinLoseButton" Content="Win/Lose" Background="White" Width="250" Height="80" Margin="25,40,0,0"></Button>
+                <Button Name="ControlButton" Content="Control" Background="White" Width="250" Height="80" Margin="25,40,0,0"></Button>
+            </StackPanel>
+        </StackPanel>
     </Grid>
+
 </Page>

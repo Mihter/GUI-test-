@@ -17,13 +17,14 @@ namespace GUI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
+    /// MainFrame рамка с которой и слеплена первая страница PageMain.
     /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
-            
+            MainFrame.Content = new PageMain();
         }
 
         /*private void ButtonMainChess(object sender, RoutedEventArgs e)
@@ -31,11 +32,11 @@ namespace GUI
             MainChess taskWindow = new MainChess();
             taskWindow.Show();
         }*/
-        private void ButtonMainChess(object sender, RoutedEventArgs e)
+        /*ВАЖНО  private void ButtonMainChess(object sender, RoutedEventArgs e)
         {
             MainFrame.Content= new PageMainChess();
             
-        }
+        }*/
         
 
     }
