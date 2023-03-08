@@ -29,9 +29,16 @@ namespace GUI
         
         private void ButtonMainChess(object sender, RoutedEventArgs e)
         {            
-                NavigationService.Navigate(new PageMainChess());   
-        }  
+            NavigationService.Navigate(new PageMainChess());   
+        }
 
-        
+        private void ButtonMainPacMan(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageMainPacMan());
+        }
+        private void ButtonMainSnake(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageMainSnake());
+        }
     }
 }

@@ -21,7 +21,7 @@
                 </Button.ToolTip>
             </Button>
 
-            <Button Name="btn2"   Background="DeepSkyBlue">
+            <Button Name="btn2"   Background="DeepSkyBlue" Click="ButtonMainPacMan">
                 <Image Source="/packmaaaan.png"   />
                 <Button.ToolTip>
                     <ToolTip>
@@ -68,7 +68,7 @@
                 </Button.ToolTip>
             </Button>
 
-            <Button Name="btn6" Background="GhostWhite">
+            <Button Name="btn6" Click="ButtonMainSnake" Background="GhostWhite">
                 <Image Source="/SnakeButton.png" />
                 <Button.ToolTip>
                     <ToolTip>
