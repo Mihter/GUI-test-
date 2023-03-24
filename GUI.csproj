@@ -10,27 +10,31 @@
   <ItemGroup>
     <None Remove="Bill-dostavlyaet.gif" />
     <None Remove="Billy.bmp" />
-    <None Remove="ChessButton.png" />
     <None Remove="exitfrompage.png" />
     <None Remove="fuck_you.png" />
+    <None Remove="Images\Billy.bmp" />
+    <None Remove="Images\ChessButton.png" />
+    <None Remove="Images\exitfrompage.png" />
+    <None Remove="Images\fuck_you.png" />
+    <None Remove="Images\packmaaaan.png" />
+    <None Remove="Images\PackMan_Button_Menu.png" />
+    <None Remove="Images\SnakeButton.png" />
     <None Remove="packmaaaan.png" />
     <None Remove="SnakeButton.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Bill-dostavlyaet.gif" />
-    <Resource Include="Billy.bmp" />
-    <Resource Include="ChessButton.png" />
-    <Resource Include="exitfrompage.png" />
-    <Resource Include="fuck_you.png" />
-    <Resource Include="packmaaaan.png" />
-    <Resource Include="SnakeButton.png" />
+    <Folder Include="Model\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="ViewModel\" />
-    <Folder Include="View\" />
+    <Resource Include="Images\Billy.bmp" />
+    <Resource Include="Images\ChessButton.png" />
+    <Resource Include="Images\exitfrompage.png" />
+    <Resource Include="Images\fuck_you.png" />
+    <Resource Include="Images\packmaaaan.png" />
+    <Resource Include="Images\PackMan_Button_Menu.png" />
+    <Resource Include="Images\SnakeButton.png" />
   </ItemGroup>
 
 </Project>
