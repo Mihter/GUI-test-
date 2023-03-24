@@ -30,14 +30,14 @@ namespace GUI
         IEnumerator IEnumerable.GetEnumerator()
             => _area.GetEnumerator();
 
-        public void Save(string filename) => File.WriteAllText(filename, JsonSerializer.Serialize(_area.Cast<Cell>()));
-        public Board(string filename) 
-        { 
-            _area = new Cell[8, 8]; 
-            Cell[] data = JsonSerializer.Deserialize<Cell[]>(File.ReadAllText(filename)); 
-            for (int i = 0; i < _area.GetLength(0); i++) 
-                for (int j = 0; j < _area.GetLength(1); j++) 
-                    _area[i, j] = data[i * 8 + j]; 
-        }
+        //public void Save(string filename) => File.WriteAllText(filename, JsonSerializer.Serialize(_area.Cast<Cell>()));
+        //public Board(string filename) 
+        //{ 
+        //    _area = new Cell[8, 8]; 
+        //    Cell[] data = JsonSerializer.Deserialize<Cell[]>(File.ReadAllText(filename)); 
+        //    for (int i = 0; i < _area.GetLength(0); i++) 
+        //        for (int j = 0; j < _area.GetLength(1); j++) 
+        //            _area[i, j] = data[i * 8 + j]; 
+        //}
     }
 }
