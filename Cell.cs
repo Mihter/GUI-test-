@@ -4,7 +4,7 @@
     {
         private State _state;
         private bool _active;
-
+        //private Cell _setPositions;
         public State State
         {
             get => _state;
